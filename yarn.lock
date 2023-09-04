@@ -56,10 +56,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@eslint/js@npm:^8.47.0":
-  version: 8.47.0
-  resolution: "@eslint/js@npm:8.47.0"
-  checksum: 0ef57fe27b6d4c305b33f3b2d2fee1ab397a619006f1d6f4ce5ee4746b8f03d11a4e098805a7d78601ca534cf72917d37f0ac19896c992a32e26299ecb9f9de1
+"@eslint/js@npm:8.48.0":
+  version: 8.48.0
+  resolution: "@eslint/js@npm:8.48.0"
+  checksum: b2755f9c0ee810c886eba3c50dcacb184ba5a5cd1cbc01988ee506ad7340653cae0bd55f1d95c64b56dfc6d25c2caa7825335ffd2c50165bae9996fe0f396851
   languageName: node
   linkType: hard
 
@@ -140,9 +140,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@mantine/core@npm:7.0.0-beta.0":
-  version: 7.0.0-beta.0
-  resolution: "@mantine/core@npm:7.0.0-beta.0"
+"@mantine/core@npm:7.0.0-beta.2":
+  version: 7.0.0-beta.2
+  resolution: "@mantine/core@npm:7.0.0-beta.2"
   dependencies:
     "@floating-ui/react": ^0.24.8
     clsx: 2.0.0
@@ -151,19 +151,19 @@ __metadata:
     react-textarea-autosize: 8.5.2
     type-fest: ^4.0.0
   peerDependencies:
-    "@mantine/hooks": 7.0.0-beta.0
+    "@mantine/hooks": 7.0.0-beta.2
     react: ^18.2.0
     react-dom: ^18.2.0
-  checksum: c29c51479796e076bb6a87bacec7f8cc7fb82402d5ad0a3ed2729acadf0c3aa96bed1ecdbf0ff29d6a2cc268bcaca02e6bd95678a2dc86be621b3e2a279080f4
+  checksum: 6943211447f3dd2ada1c5ffe5f37bb3dc2d1f55e72d3eb61e5327793d44a8e6a94ddc3372280f8d1d4ed852b1ce1b749b90237181942df1d5e09828d443cb5b2
   languageName: node
   linkType: hard
 
-"@mantine/hooks@npm:7.0.0-beta.0":
-  version: 7.0.0-beta.0
-  resolution: "@mantine/hooks@npm:7.0.0-beta.0"
+"@mantine/hooks@npm:7.0.0-beta.2":
+  version: 7.0.0-beta.2
+  resolution: "@mantine/hooks@npm:7.0.0-beta.2"
   peerDependencies:
     react: ^18.2.0
-  checksum: 866cc713f4428144ddb665c2a90291df5e349cb1d374d537126956f04c6cc90c3a97a7c6015fbe4d613722edff4b84f2f850c610f184821c744f9bf8f0d34343
+  checksum: eecee49490ea98c69e0a36f7725164aa5daacbfd357c14952d86c1411a8af4eae93cc4635f932f78f4768a00f0aa07bc4ad0dd8d2a74729dba64b75a0e54973d
   languageName: node
   linkType: hard
 
@@ -296,10 +296,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:20.5.2":
-  version: 20.5.2
-  resolution: "@types/node@npm:20.5.2"
-  checksum: 46d032bb9a1db687693f6351702572d2f1e12face32caf8182323413918de27d4ac16cc2b15ff6b891651313e602da18edbdd095d16d2b5a26588c2edffca892
+"@types/node@npm:20.5.9":
+  version: 20.5.9
+  resolution: "@types/node@npm:20.5.9"
+  checksum: 717490e94131722144878b4ca1a963ede1673bb8f2ef78c2f5b50b918df6dc9b35e7f8283e5c2a7a9f137730f7c08dc6228e53d4494a94c9ee16881e6ce6caed
   languageName: node
   linkType: hard
 
@@ -319,7 +319,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react@npm:*, @types/react@npm:18.2.20":
+"@types/react@npm:*":
   version: 18.2.20
   resolution: "@types/react@npm:18.2.20"
   dependencies:
@@ -327,6 +327,17 @@ __metadata:
     "@types/scheduler": "*"
     csstype: ^3.0.2
   checksum: 30f699c60e5e4bfef273ce64d320651cdd60f5c6a08361c6c7eca8cebcccda1ac953d2ee57c9f321b5ae87f8a62c72b6d35ca42df0e261d337849952daab2141
+  languageName: node
+  linkType: hard
+
+"@types/react@npm:18.2.21":
+  version: 18.2.21
+  resolution: "@types/react@npm:18.2.21"
+  dependencies:
+    "@types/prop-types": "*"
+    "@types/scheduler": "*"
+    csstype: ^3.0.2
+  checksum: ffed203bfe7aad772b8286f7953305c9181ac3a8f27d3f5400fbbc2a8e27ca8e5bbff818ee014f39ca0d19d2b3bb154e5bdbec7e232c6f80b59069375aa78349
   languageName: node
   linkType: hard
 
@@ -615,20 +626,20 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "bmi-calculator@workspace:."
   dependencies:
-    "@mantine/core": 7.0.0-beta.0
-    "@mantine/hooks": 7.0.0-beta.0
-    "@types/node": 20.5.2
-    "@types/react": 18.2.20
+    "@mantine/core": 7.0.0-beta.2
+    "@mantine/hooks": 7.0.0-beta.2
+    "@types/node": 20.5.9
+    "@types/react": 18.2.21
     "@types/react-dom": 18.2.7
-    eslint: 8.47.0
+    eslint: 8.48.0
     eslint-config-next: 13.4.19
     next: 13.4.19
-    postcss: ^8.4.28
+    postcss: ^8.4.29
     postcss-preset-mantine: ^1.7.0
     postcss-simple-vars: ^7.0.1
     react: 18.2.0
     react-dom: 18.2.0
-    typescript: 5.1.6
+    typescript: 5.2.2
   languageName: unknown
   linkType: soft
 
@@ -1144,14 +1155,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint@npm:8.47.0":
-  version: 8.47.0
-  resolution: "eslint@npm:8.47.0"
+"eslint@npm:8.48.0":
+  version: 8.48.0
+  resolution: "eslint@npm:8.48.0"
   dependencies:
     "@eslint-community/eslint-utils": ^4.2.0
     "@eslint-community/regexpp": ^4.6.1
     "@eslint/eslintrc": ^2.1.2
-    "@eslint/js": ^8.47.0
+    "@eslint/js": 8.48.0
     "@humanwhocodes/config-array": ^0.11.10
     "@humanwhocodes/module-importer": ^1.0.1
     "@nodelib/fs.walk": ^1.2.8
@@ -1187,7 +1198,7 @@ __metadata:
     text-table: ^0.2.0
   bin:
     eslint: bin/eslint.js
-  checksum: 1988617f703eadc5c7540468d54dc8e5171cf2bb9483f6172799cd1ff54a9a5e4470f003784e8cef92687eaa14de37172732787040e67817581a20bcb9c15970
+  checksum: f20b359a4f8123fec5c033577368cc020d42978b1b45303974acd8da7a27063168ee3fe297ab5b35327162f6a93154063e3ce6577102f70f9809aff793db9bd0
   languageName: node
   linkType: hard
 
@@ -2368,14 +2379,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"postcss@npm:^8.4.28":
-  version: 8.4.28
-  resolution: "postcss@npm:8.4.28"
+"postcss@npm:^8.4.29":
+  version: 8.4.29
+  resolution: "postcss@npm:8.4.29"
   dependencies:
     nanoid: ^3.3.6
     picocolors: ^1.0.0
     source-map-js: ^1.0.2
-  checksum: f605c24a36f7e400bad379735fbfc893ccb8d293ad6d419bb824db77cdcb69f43d614ef35f9f7091f32ca588d130ec60dbcf53b366e6bf88a8a64bbeb3c05f6d
+  checksum: dd6daa25e781db9ae5b651d9b7bfde0ec6e60e86a37da69a18eb4773d5ddd51e28fc4ff054fbdc04636a31462e6bf09a1e50986f69ac52b10d46b7457cd36d12
   languageName: node
   linkType: hard
 
@@ -2982,23 +2993,23 @@ __metadata:
   languageName: node
   linkType: hard
 
-"typescript@npm:5.1.6":
-  version: 5.1.6
-  resolution: "typescript@npm:5.1.6"
+"typescript@npm:5.2.2":
+  version: 5.2.2
+  resolution: "typescript@npm:5.2.2"
   bin:
     tsc: bin/tsc
     tsserver: bin/tsserver
-  checksum: b2f2c35096035fe1f5facd1e38922ccb8558996331405eb00a5111cc948b2e733163cc22fab5db46992aba7dd520fff637f2c1df4996ff0e134e77d3249a7350
+  checksum: 7912821dac4d962d315c36800fe387cdc0a6298dba7ec171b350b4a6e988b51d7b8f051317786db1094bd7431d526b648aba7da8236607febb26cf5b871d2d3c
   languageName: node
   linkType: hard
 
-"typescript@patch:typescript@5.1.6#~builtin<compat/typescript>":
-  version: 5.1.6
-  resolution: "typescript@patch:typescript@npm%3A5.1.6#~builtin<compat/typescript>::version=5.1.6&hash=5da071"
+"typescript@patch:typescript@5.2.2#~builtin<compat/typescript>":
+  version: 5.2.2
+  resolution: "typescript@patch:typescript@npm%3A5.2.2#~builtin<compat/typescript>::version=5.2.2&hash=f3b441"
   bin:
     tsc: bin/tsc
     tsserver: bin/tsserver
-  checksum: f53bfe97f7c8b2b6d23cf572750d4e7d1e0c5fff1c36d859d0ec84556a827b8785077bc27676bf7e71fae538e517c3ecc0f37e7f593be913d884805d931bc8be
+  checksum: 0f4da2f15e6f1245e49db15801dbee52f2bbfb267e1c39225afdab5afee1a72839cd86000e65ee9d7e4dfaff12239d28beaf5ee431357fcced15fb08583d72ca
   languageName: node
   linkType: hard
 

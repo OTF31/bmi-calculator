@@ -1,0 +1,23 @@
+.input {
+  border-radius: rem(12px);
+  border-color: var(--mantine-color-inuitBlue-6);
+  font-size: rem(24px);
+  color: var(--mantine-color-crowBlack-6);
+  font-weight: 600;
+
+  &::placeholder {
+    color: var(--mantine-color-crowBlack-6);
+    opacity: 0.25;
+  }
+
+  &:focus-within {
+    border-color: var(--mantine-color-retroBlue-6);
+    caret-color: var(--mantine-color-retroBlue-6);
+  }
+}
+
+.section {
+  color: var(--mantine-color-retroBlue-6);
+  font-weight: 600;
+  font-size: rem(24px);
+}
