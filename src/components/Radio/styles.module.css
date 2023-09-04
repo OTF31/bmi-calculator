@@ -1,0 +1,15 @@
+.radio {
+  border-color: var(--mantine-color-inuitBlue-6);
+
+  &:hover {
+    border-color: var(--mantine-color-retroBlue-6);
+  }
+
+  &:checked {
+    border: none;
+  }
+}
+
+.icon {
+  color: var(--mantine-color-retroBlue-6);
+}
