@@ -13,3 +13,9 @@
 .icon {
   color: var(--mantine-color-retroBlue-6);
 }
+
+.label {
+  padding-left: rem(18px);
+  font-weight: 600;
+  color: var(--mantine-color-crowBlack-6);
+}

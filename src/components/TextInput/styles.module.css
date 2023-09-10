@@ -21,3 +21,10 @@
   font-weight: 600;
   font-size: rem(24px);
 }
+
+.label {
+  font-size: rem(14px);
+  color: var(--mantine-color-sausalitoPort-6);
+  line-height: 150%;
+  margin-bottom: rem(8px);
+}
