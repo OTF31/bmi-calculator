@@ -1,7 +1,7 @@
 'use client'
 
 import { yupResolver } from '@hookform/resolvers/yup'
-import { Box, Group, RadioGroup, Stack, Text, rem } from '@mantine/core'
+import { Box, Flex, Group, RadioGroup, Stack, Text, rem } from '@mantine/core'
 import { useCallback, useEffect, useState } from 'react'
 import { Controller, FormProvider, useForm, useWatch } from 'react-hook-form'
 import * as yup from 'yup'
@@ -80,7 +80,7 @@ const Form = () => {
     defaultValues: { system: 'metric', cm: '', kg: '', ft: '', in: '', st: '', lbs: '' },
     resolver: yupResolver(schema),
   })
-  const { handleSubmit, watch, resetField, getValues } = methods
+  const { handleSubmit, watch, reset, getValues } = methods
   const [bmi, setBmi] = useState('')
 
   const onSubmit = useCallback(
@@ -124,12 +124,7 @@ const Form = () => {
               name='system'
               {...{ value }}
               onChange={value => {
-                resetField('cm')
-                resetField('kg')
-                resetField('ft')
-                resetField('in')
-                resetField('st')
-                resetField('lbs')
+                reset({ system: value, cm: '', kg: '', ft: '', in: '', st: '', lbs: '' })
                 onChange(value)
               }}
             >
@@ -142,35 +137,33 @@ const Form = () => {
         }}
       />
       <FormProvider {...methods}>
-        <Stack gap={16}>
-          {watch('system') === 'metric' ? (
-            <>
-              <TextInput name='cm' label='Height' placeholder='0' rightSection='cm' />
-              <TextInput name='kg' label='Weight' placeholder='0' rightSection='kg' />
-            </>
-          ) : (
-            <>
-              <Group gap={16} wrap='nowrap'>
-                <TextInput name='ft' label='Height' placeholder='0' rightSection='ft' />
-                <TextInput
-                  name='in'
-                  placeholder='0'
-                  styles={{ input: { marginTop: rem(30) } }}
-                  rightSection='in'
-                />
-              </Group>
-              <Group gap={16} wrap='nowrap'>
-                <TextInput name='st' label='Weight' placeholder='0' rightSection='st' />
-                <TextInput
-                  name='lbs'
-                  placeholder='0'
-                  rightSection='lbs'
-                  styles={{ input: { marginTop: rem(30) } }}
-                />
-              </Group>
-            </>
-          )}
-        </Stack>
+        {watch('system') === 'metric' ? (
+          <Flex direction={{ base: 'column', sm: 'row' }} gap={16}>
+            <TextInput name='cm' label='Height' placeholder='0' rightSection='cm' />
+            <TextInput name='kg' label='Weight' placeholder='0' rightSection='kg' />
+          </Flex>
+        ) : (
+          <Stack gap={16}>
+            <Group gap={16} wrap='nowrap'>
+              <TextInput name='ft' label='Height' placeholder='0' rightSection='ft' />
+              <TextInput
+                name='in'
+                placeholder='0'
+                styles={{ input: { marginTop: rem(30) } }}
+                rightSection='in'
+              />
+            </Group>
+            <Group gap={16} wrap='nowrap'>
+              <TextInput name='st' label='Weight' placeholder='0' rightSection='st' />
+              <TextInput
+                name='lbs'
+                placeholder='0'
+                rightSection='lbs'
+                styles={{ input: { marginTop: rem(30) } }}
+              />
+            </Group>
+          </Stack>
+        )}
       </FormProvider>
       <Box
         p={32}
@@ -187,14 +180,14 @@ const Form = () => {
             </Text>
           </Stack>
         ) : (
-          <Stack gap={24}>
-            <Stack gap={8}>
+          <Flex direction={{ base: 'column', sm: 'row' }} gap={24}>
+            <Stack gap={8} style={{ flexBasis: '50%' }}>
               <Text fw={600}>Your BMI is...</Text>
               <Text fw={600} fz={48}>
                 {bmi}
               </Text>
             </Stack>
-            <Text fz={14}>
+            <Text fz={14} style={{ flexBasis: '50%' }}>
               Your BMI suggests you&apos;re {getRange(Number(bmi))}. Your ideal weight is
               between{' '}
               <Text component='span' fw={700}>
@@ -208,7 +201,7 @@ const Form = () => {
                 .
               </Text>
             </Text>
-          </Stack>
+          </Flex>
         )}
       </Box>
     </>
