@@ -1,0 +1,7 @@
+.result {
+  border-radius: 16px;
+  background: linear-gradient(90deg, #345ff6 0%, #587dff 100%);
+  @media (min-width: $mantine-breakpoint-sm) {
+    border-radius: 16px 80px 80px 16px;
+  }
+}
