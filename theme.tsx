@@ -3,7 +3,11 @@
 import { MantineThemeOverride, createTheme } from '@mantine/core'
 import { Inter } from 'next/font/google'
 
-const inter = Inter({ subsets: ['latin'], weight: ['400', '600'] })
+const inter = Inter({
+  subsets: ['latin'],
+  weight: ['400', '600'],
+  variable: '--font-inter',
+})
 
 const theme: MantineThemeOverride = createTheme({
   breakpoints: { xs: '23.4375em', sm: '48em', md: '62em', lg: '75em', xl: '90em' },

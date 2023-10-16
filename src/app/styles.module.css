@@ -1,0 +1,5 @@
+.healthPillars {
+  @media (min-width: $mantine-breakpoint-xl) {
+    border-radius: 35px;
+  }
+}
